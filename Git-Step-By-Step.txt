@@ -1,0 +1,28 @@
+1. create a local directory to hold all the source codes or documents as local repository(/test)
+
+2. create a repository at the Github server (https://Github.com/<user_name> ??
+   ex. /test
+
+3. start Gitbash terminal
+
+4. change to the local directory holding all the source documents
+
+5. $ git init 
+
+   $ git add <files to be uploaded to remote directory at github.com>
+     ex. 
+     $ git add *.*   (would like to upload all the files in the directory)   
+
+   $ git commit -m "message_text"    (-m is git flag stands for message)
+     ex.
+       $ git commit -m "First Commit"
+
+   Tell git where to upload the source documents: 
+   $ git remote add origin https://github.com/<github user>/<remote_repository_name.git>
+     ex:
+     $ ex git remote add origin https://github.com/github01-01/temp.git
+
+   Send the document to remote repository (github server):
+   $ git push origin master
+
+
